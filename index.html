@@ -7,11 +7,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <h1>Etch-a-Sketch</h1>
   <div class="box"></div>
   <div class="function">
-    <button class="resetblock" >重置边长</button>
+    <button class="resetblock" >点我重置边长</button>
+    <input type="range" name="sizeSlider" id="sizeSlider"min="8" max="100" value="16">
+    <span id="gridSizeValue">16×16</span>
+    <button class="clear">清除画布</button>
     <button class="changecolor">设置颜色</button>
+    <input type="color" id="colorPicker">
+    <button class="rainbow">彩虹模式</button>
+
   </div>
   
   <script src="script.js"></script>
